@@ -1,8 +1,19 @@
 /*
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
-
-const page1 = {
+  type page = {
+    title: string,
+    likes:number,
+    accounts:string[],
+    status:string,
+    details?:{
+      createAt: Date,
+      updateAt: Date
+    } 
+  
+  }
+  
+const page1 : page = {
   title: 'The awesome page',
   likes: 100,
   accounts: ['Max', 'Anton', 'Nikita'],
